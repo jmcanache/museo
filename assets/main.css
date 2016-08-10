@@ -1,0 +1,693 @@
+html {
+max-width: 1300px;
+position: relative;
+background: #ffffff;
+margin-left: auto;
+margin-right: auto;
+}
+.row{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.activo{
+	background-color: rgba(0,0,0, 0.5);
+	border-radius: 10px;
+}
+.miCarousel{
+	/*background-image: url('../images/carousel/papel.png');*/
+	margin: 5em 0 10em 0;
+}
+#miCarousel-inner{
+	position: relative;
+}
+
+#edificio{
+	padding-top: 12em;
+	padding-bottom: 6em;
+}
+
+#head{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color:silver;
+	background-image: 
+	radial-gradient(circle at 100% 150%, lightgrey 24%, white 25%, white 28%, lightgrey 29%, lightgrey 36%, white 36%, white 40%, transparent 40%, transparent),
+	radial-gradient(circle at 0    150%, lightgrey 24%, white 25%, white 28%, lightgrey 29%, lightgrey 36%, white 36%, white 40%, transparent 40%, transparent),
+	radial-gradient(circle at 50%  100%, white 10%, lightgrey 11%, lightgrey 23%, white 24%, white 30%, lightgrey 31%, lightgrey 43%, white 44%, white 50%, lightgrey 51%, lightgrey 63%, white 64%, white 71%, transparent 71%, transparent),
+	radial-gradient(circle at 100% 50%, white 5%, lightgrey 6%, lightgrey 15%, white 16%, white 20%, lightgrey 21%, lightgrey 30%, white 31%, white 35%, lightgrey 36%, lightgrey 45%, white 46%, white 49%, transparent 50%, transparent),
+	radial-gradient(circle at 0    50%, white 5%, lightgrey 6%, lightgrey 15%, white 16%, white 20%, lightgrey 21%, lightgrey 30%, white 31%, white 35%, lightgrey 36%, lightgrey 45%, white 46%, white 49%, transparent 50%, transparent);
+	background-size:100px 50px;
+}
+#headimg1{
+}
+
+#headimg2{
+}
+
+
+#titulo-container{
+	position: absolute;
+	padding-top: 2em;
+}
+
+#titulo{
+	right:0;
+	width:40%;
+	height:50%;
+	margin-left: 50em;
+}
+
+#sub-titulo{
+	right:0;
+	width:40%;
+	height:8em;
+	padding-top: 10px;
+	margin-left: 50em;
+}
+
+.fondo_mapa{
+    background-image: url(../fondos/fondo_mapa.jpg);
+    border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+}
+
+.hidden {
+	display: none;
+}
+
+div.tooltip {
+    background-color: rgba(0,0,0,0);
+    border-radius: 2px;
+    opacity: 0.9;
+    position: absolute;
+    font-family: 'Nothing You Could Do', cursive;
+    text-shadow: 0 2px 2px #fff;
+    font-weight: bold;
+	font-size: 2em;
+    color: black;
+}
+
+.formato{
+	padding-top: 2em;
+	padding-bottom: 3em;
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+}
+
+.transparent{
+	opacity: 0;
+}
+
+.tablas{
+	margin-right: 2em;
+	color: #7a7c7f; 
+	font-size: 110%; 
+	font-family: "Libre Baskerville", serif; 
+	line-height: 45px; 
+	text-shadow: 0 1px 1px #fff;
+
+}
+
+.tablas_config{
+	margin-bottom: 4em;
+}
+
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+
+.small-td{
+}
+.small-table{}
+
+.table-config tbody tr td{
+	padding-top: 0;
+	padding-bottom: 0;
+
+}
+#tablaizq{
+	padding-left: 5em;
+}
+
+#tablader{
+	padding-right: 5em;
+}
+
+.info{
+	font-family: 'Courgette', cursive;
+	font-size: 150%; 
+	line-height: 150%; 
+	font-weight: normal; 
+	text-align: center; 
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin: 1em;
+	font-size:1.5em; 
+	line-height:1.1;
+}
+
+.tip{
+	/*font-family: 'Courgette', cursive;*/
+}
+ 
+.nav-texto{
+	font-family: 'Nothing You Could Do', cursive;
+	text-shadow: 6px 6px #ccc;
+	font-size: 5em;
+    color: black;
+    margin: 0;
+	border: 0;
+	padding: 0.3em;
+}
+@media screen and (max-width: 480px){
+	.nav-texto{
+		font-family: 'Nothing You Could Do', cursive;
+		text-shadow: 2px 2px #ccc;
+		font-size: 10vw;
+	    color: black;
+	    margin: 0;
+		border: 0;
+		padding: 0.3em;
+	}
+}
+
+.navbar-wrapper{
+	height:100px;
+}
+
+#nav_ciudad{
+	/*margin-top: 5em;
+	margin-bottom: 1em;
+	background-color: white;*/
+	background: inherit;
+	border-top-left-radius: 2em;
+ 	border-top-right-radius: 2em;
+}
+
+.link{    
+	width: 80%;  
+}
+
+.about{	
+	padding-top: 2em;
+	padding-bottom: 2em;	
+}
+
+#cuerpo{border-radius: 2em;}
+.about header{
+	padding-top: 1em;
+	padding-bottom: 2em;
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+.about article{
+	font-family: 'Sorts Mill Goudy', serif;
+	 font-weight: bold;
+    font-size: 130%;
+}
+
+.about table{
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+.table{
+	margin-bottom: 0;
+}
+
+@media (max-width: 400px){
+	.tablas_config{
+		width: 100% !important;
+		margin-left: 0% !important;
+	}
+}
+
+.flexslider{
+	border-radius: 10px;
+}
+
+.enmarcar{        
+	border-radius:10px;
+  	overflow: hidden;  
+}
+
+.crop {
+ height: auto;
+ width: auto;
+ overflow: hidden;
+ 
+}
+.crop>img {
+	width:auto;
+ 	height: auto;
+ 	object-fit: cover;
+}
+@media (max-width: 500px){
+
+}
+
+.slides_config{
+}
+
+.transparent{
+	opacity: 0;
+}
+
+.padding-top-6{
+	padding-top: 1em;
+	}
+.no-padding{
+	padding: 0;
+}
+
+.no-margins{
+	margin: 0;
+	border: 0;
+}
+
+
+footer{
+	
+	margin-top: 4em;
+	padding-bottom: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em; 
+	padding-bottom: 0.5em;
+	background-size:100px 50px;
+}
+#foot{
+	margin-top: 4em; 
+	margin-bottom: 0;
+	border-radius: 0;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	background-color:silver;
+	background-image: 
+	radial-gradient(circle at 100% 150%, lightgrey 24%, white 25%, white 28%, lightgrey 29%, lightgrey 36%, white 36%, white 40%, transparent 40%, transparent),
+	radial-gradient(circle at 0    150%, lightgrey 24%, white 25%, white 28%, lightgrey 29%, lightgrey 36%, white 36%, white 40%, transparent 40%, transparent),
+	radial-gradient(circle at 50%  100%, white 10%, lightgrey 11%, lightgrey 23%, white 24%, white 30%, lightgrey 31%, lightgrey 43%, white 44%, white 50%, lightgrey 51%, lightgrey 63%, white 64%, white 71%, transparent 71%, transparent),
+	radial-gradient(circle at 100% 50%, white 5%, lightgrey 6%, lightgrey 15%, white 16%, white 20%, lightgrey 21%, lightgrey 30%, white 31%, white 35%, lightgrey 36%, lightgrey 45%, white 46%, white 49%, transparent 50%, transparent),
+	radial-gradient(circle at 0    50%, white 5%, lightgrey 6%, lightgrey 15%, white 16%, white 20%, lightgrey 21%, lightgrey 30%, white 31%, white 35%, lightgrey 36%, lightgrey 45%, white 46%, white 49%, transparent 50%, transparent);
+	background-size:100px 50px;
+}
+
+@media (max-width: 480px) {
+	.width-60{
+		width: 60%;
+		margin-left: 0;
+	}
+	.width-40{
+		width: 40%;
+	}
+	.pull-right{
+		float: none !important;
+	}
+	h2{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	h2{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 767px){
+	.small-col{
+		padding: 0% 2%;
+		width: 90%;
+		margin-left: 10%; 
+	}
+	.museos-dinamicos{
+		display: none !important;
+		z-index: 5;
+	}
+	.move-to-map{
+		display: none !important;
+	}
+}
+@media (min-width: 615px) and (max-width: 767px){
+	.info{
+		font-size: 1.8em;
+		padding-top: 3em;
+	}
+}
+@media (max-width: 615px){
+	.info{
+		padding-top: 3em;
+	}
+}
+@media (max-width: 480px){
+	.width-100{
+		width: 100%;
+	}
+	.width-50{
+		width: 50%;
+		margin-left: 25%;
+	}
+	.info{
+		padding-top: 1.5em;
+	}
+}
+
+.back {	background:url(../images/museos_0000_Vector-Smart-Object.png) right no-repeat fixed #fff; 
+	}
+
+.back-to-top {
+	background: none;
+	margin: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+}
+.move-to-map {
+	background: none;
+	margin: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	position: absolute;
+	padding-top: 49%;
+	display: block;
+}
+
+.scroll, .back-to-top, .move-to-map{
+	cursor: pointer;
+}
+
+.parallax-window {
+    background: transparent;
+}
+
+.paraxify {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.paraxifyT {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+.museos-dinamicos{
+	position: absolute;
+	font-size: 1.5vw;
+	font-weight: bolder;
+	font-family: 'Nothing You Could Do', cursive;
+	color:#000;	
+	text-shadow: 2px 2px goldenrod;	
+	display: block;
+}
+.museos-dinamicos>img{
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.6), 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.pos1{
+	padding-top: 10%;
+	padding-left: 10%;
+	
+}
+.pos2{
+	padding-top: 30%;
+	padding-left: 40%;
+	}
+	
+.pos3{
+	padding-top: 20%;
+	padding-left: 2%;
+	
+}
+.pos4{
+	padding-top: 40%;
+	padding-left: 20%;
+	
+}
+.pos5{
+	padding-top: 30%;
+	padding-left: 40%;
+	
+}
+.pos6{
+	padding-top: 30%;
+	padding-left: 35%;
+	
+}
+.pos7{
+	padding-top: 15%;
+	padding-left: 30%;
+	
+}
+.pos8{
+	padding-top: 35%;
+	padding-left: 70%;
+	
+}
+.pos9{
+	padding-top: 35%;
+	padding-left: 25%;
+	
+}
+.pos10{
+	padding-top: 40%;
+	padding-left: 50%;
+}
+.pos11{
+	padding-top: 15%;
+	padding-left: 10%;
+	
+}
+.pos12{
+	padding-top: 30%;
+	padding-left: 15%;
+	
+}
+
+.table{
+	transition: background-color 0.4s;
+}
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th{
+	background-color: rgba(0,0,0, 0.5);
+	border-radius: 10px;
+}
+
+.fondo_amazonas{
+    background-image: url(../fondos/amazonas.png)!important;
+}
+.fondo_ancash{
+    background-image: url(../fondos/ancash.resized.png);
+}
+.fondo_arequipa{
+    background-image: url(../fondos/arequipa.png);
+}
+.fondo_ayacucho{
+    background-image: url(../fondos/ayacucho.png);
+}
+.fondo_cajamarca{
+    background-image: url(../fondos/cajamarca.png);
+}
+.fondo_callao{
+    background-image: url(../fondos/callao.png);
+}
+.fondo_cuzco{
+    background-image: url(../fondos/cuzco.png);
+}
+.fondo_huancavelica{
+    background-image: url(../fondos/huancavelica.png);
+}
+.fondo_huanuco{
+    background-image: url(../fondos/huanuco.png);
+}
+.fondo_ica{
+    background-image: url(../fondos/ica.png);
+}
+.fondo_junin{
+    background-image: url(../fondos/junin.png);
+}
+.fondo_lambayeque{
+    background-image: url(../fondos/lambayeque.png);
+}
+.fondo_libertad{
+    background-image: url(../fondos/la_libertad.png);
+}
+.fondo_lima{
+    background-image: url(../fondos/lima.png);
+}
+.fondo_cajamarca{
+    background-image: url(../fondos/cajamarca.png);
+}
+
+
+#mapa_amazonas { transition: fill 0.4s;}
+#mapa_amazonas:hover { fill: #00BBAA; }
+
+#mapa_loreto { transition: fill 0.4s; }
+#mapa_loreto:hover { fill: #00BBAA; }
+
+#mapa_san_martin { transition: fill 0.4s; }
+#mapa_san_martin:hover { fill: #00BBAA; }
+
+#mapa_cajamarca { transition: fill 0.4s; }
+#mapa_cajamarca:hover { fill: #00BBAA; }
+
+#mapa_lambayeque { transition: fill 0.4s; }
+#mapa_lambayeque:hover { fill: #00BBAA; }
+
+#mapa_piura { transition: fill 0.4s; }
+#mapa_piura:hover { fill: #00BBAA; }
+
+#mapa_tumbes { transition: fill 0.4s; }
+#mapa_tumbes:hover { fill: #00BBAA; }
+
+#mapa_la_libertad { transition: fill 0.4s; }
+#mapa_la_libertad:hover { fill: #00BBAA; }
+
+#mapa_ancash { transition: fill 0.4s; }
+#mapa_ancash:hover { fill: #00BBAA; }
+
+#mapa_huanuco { transition: fill 0.4s; }
+#mapa_huanuco:hover { fill: #00BBAA; }
+
+#mapa_ucayali { transition: fill 0.4s; }
+#mapa_ucayali:hover { fill: #00BBAA; }
+
+#mapa_pasco { transition: fill 0.4s; }
+#mapa_pasco:hover { fill: #00BBAA; }
+
+#mapa_lima { transition: fill 0.4s; }
+#mapa_lima:hover { fill: #00BBAA; }
+
+#mapa_callao { transition: fill 0.4s;}
+#mapa_callao:hover { fill: #00BBAA; }
+
+#mapa_junin { transition: fill 0.4s;}
+#mapa_junin:hover { fill: #00BBAA; }
+
+#mapa_madre_de_dios { transition: fill 0.4s;}
+#mapa_madre_de_dios:hover { fill: #00BBAA; }
+
+#mapa_ica { transition: fill 0.4s;}
+#mapa_ica:hover { fill: #00BBAA; }
+
+#mapa_ayacucho { transition: fill 0.4s;}
+#mapa_ayacucho:hover { fill: #00BBAA; }
+
+#mapa_cuzco { transition: fill 0.4s;}
+#mapa_cuzco:hover { fill: #00BBAA; }
+
+#mapa_huancavelica { transition: fill 0.4s;}
+#mapa_huancavelica:hover { fill: #00BBAA; }
+
+#mapa_apurimac { transition: fill 0.4s;}
+#mapa_apurimac:hover { fill: #00BBAA; }
+
+#mapa_arequipa { transition: fill 0.4s;}
+#mapa_arequipa:hover { fill: #00BBAA; }
+
+#mapa_puno { transition: fill 0.4s;}
+#mapa_puno:hover { fill: #00BBAA; }
+
+#mapa_moquegua { transition: fill 0.4s;}
+#mapa_moquegua:hover { fill: #00BBAA; }
+
+#mapa_tacna { transition: fill 0.4s;}
+#mapa_tacna:hover { fill: #00BBAA; }
+
+.masInfo{
+	margin-bottom: 2%;
+	border-color: #bda338;
+	background-color: #bda338;
+}
+.popover{
+	max-width: 100%;
+}
+.modal-body{
+	text-align: justify;
+}
+
+#section-head{
+	margin-bottom: 0;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+#logos-i {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: transparent; }
+  #logos-i img {
+    display: inline; }
+
+#logos-f {
+  bottom: 0; }
+
+#logos-i, #logos-f {
+	background-color:white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+  #logos-i img, #logos-f img {
+    display: inline; }
+
+.logo-peru{
+  height: 4vw;
+}
+@media(max-width: 1200px){
+  .logo-peru{
+    height: 5vw;
+  } 
+}
+@media(max-width: 768px){
+  .logo-peru{
+    height: 3em;
+  }
+}
+@media(max-width: 500px){
+	.logo-peru{
+    height: 2em;
+  }
+}
+.creferencias {
+  width: 50px;
+  display: inline;
+  margin-left: 20px; }
+
+/*** Section referencia ***/
+#referencias {
+  display: none;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  height: 100vh;
+  padding: 30px;
+  padding-left: 80px;
+  text-align: left;
+  color: #FFF;
+  font-size: 16px;
+  width: 100%;
+  position: absolute;
+  left: 0; }
+  #referencias a {
+    text-decoration: none;
+    color: #DDD;
+    text-indent: 20px; }
+
+#referencias.active {
+  display: block; }
+/*** End section referencia ***/
